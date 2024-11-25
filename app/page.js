@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function Home() {
   const [input_todo, setInput_todo] = useState("");
@@ -29,6 +30,7 @@ export default function Home() {
 
   return (
     <div className="box">
+      <SpeedInsights />
       <p className="text-xs font-medium bg-gray-600 bg-opacity-20 text-gray-400 rounded-md h-7 flex items-center justify-center">
         Bahadır Hakan Yüksel
       </p>
